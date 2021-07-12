@@ -1,0 +1,22 @@
+git init - in root project folder
+git remote add origin git@github.com:<USERNAME>/django_tango.git
+git add .
+git commit -m "Some message" - initial commit message
+
+IN CASE YOU MADE AN OOPSIE
+
+git pull origin master --allow-unrelated-histories 
+git push -f origin master - yeah, I re-wrote remote, cause I am not very good with GIT
+git log 
+
+If not, proceed as ususal
+
+
+Then venv and stuff. You might go the venv route, but in my case I will use Conda + PIP, since it is much, MUCH easier to maintain
+
+conda --version - to make sure conda was installed properly
+conda update conda
+conda create -n rangoenv python=3.8
+conda activate rangoenv
+conda deactivate
+pip install
