@@ -19,4 +19,17 @@ conda update conda
 conda create -n rangoenv python=3.8
 conda activate rangoenv
 conda deactivate
-pip install
+pip install -r requirements.txt - all requirements will be there and will be kept only there
+
+
+DJANGO Part, instead of using Django 2 like in the book, I will be using Django 3, so all commands will be changed accordingly.
+django-admin startproject tango_with_django_project
+python manage.py runserver
+
+About ports and such. You may run command like this to run app on a specific port (anything < 1024 is privilledged, so just don`t.)
+python manage.py runserver 0.0.0.0: 5555 (0.0.0.0 can be replaced by your machine IP or left as is, django is smart like that)
+
+And this way, you might access your app locally from another machine (depending on proxy, network settings and such)
+http://<your_machine_ip>:<port>/
+
+python manage.py startapp rango
