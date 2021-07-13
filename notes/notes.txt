@@ -38,6 +38,14 @@ python manage.py startapp rango
 Another difference
 {% load static %} instead of {% load staticfiles %} or any other variation of the beforementioned
 
-
 To run some tests for your app
 python manage.py test <app>.tests
+
+Create first models in models.py of my app, then:
+
+python manage.py migrate - create DB
+python manage.py createsuperuser - superuser
+python manage.py makemigrations rango - and make migrations for app
+python manage.py migrate
+
+python manage.py shell - well, for the shell
