@@ -38,3 +38,6 @@ python manage.py startapp rango
 Another difference
 {% load static %} instead of {% load staticfiles %} or any other variation of the beforementioned
 
+
+To run some tests for your app
+python manage.py test <app>.tests
