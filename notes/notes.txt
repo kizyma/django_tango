@@ -33,3 +33,8 @@ And this way, you might access your app locally from another machine (depending 
 http://<your_machine_ip>:<port>/
 
 python manage.py startapp rango
+
+
+Another difference
+{% load static %} instead of {% load staticfiles %} or any other variation of the beforementioned
+
