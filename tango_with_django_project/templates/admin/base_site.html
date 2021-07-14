@@ -1,0 +1,10 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Rango site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Rango Admin Page') }}</a></h1>
+{% comment %} {{ block.super }} {% endcomment %}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
